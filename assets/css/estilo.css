@@ -369,7 +369,7 @@ textarea {
 }
 
 #contato h1,
-#quem-somos h1 {
+#quem-somos h1 , #eventos h1{
     font-family: fonte-bold;
     text-align: center;
     color: #fff;
@@ -475,33 +475,33 @@ textarea {
 
 /*a rlm qm somos*/
 
-#quem-somos {
+#quem-somos, #eventos {
     background: #19499e;
     color: #fff;
     font-family: fonte-regular;
 }
 
-.quemsomos {
+.quemsomos, .eventos{
     text-align: center;
     margin: 85px 0 100px 0;
 }
 
-.quemsomos .detalhes a {
+.quemsomos .detalhes a, #eventos a {
     color: #fff
 }
 
-.quemsomos img {
+.quemsomos img, .eventos img {
     border: 10px solid rgb(255, 255, 255);
     border-radius: 50%;
     padding: 10px;
 }
 
-.quemsomos img:hover {
+.quemsomos img:hover, #eventos img:hover {
     border: 10px solid #3ab0e2;
     transition: linear .25s;
 }
 
-.quemsomos h2 {
+.quemsomos h2, #eventos h2 {
     text-transform: uppercase;
     font-size: 15px;
     position: relative;
@@ -509,12 +509,12 @@ textarea {
     font-family: fonte-regular;
 }
 
-.quemsomos .detalhes {
+.quemsomos .detalhes, .eventos .detalhes {
     position: relative;
     display: inline-block;
 }
 
-.quemsomos .detalhes:before {
+.quemsomos .detalhes:before, .eventos .detalhes:before {
     position: absolute;
     margin: auto;
     z-index: 1;
@@ -529,13 +529,13 @@ textarea {
 #produtos img {
     width: 100%;
 }
-
+/*produtos*/
 #produtos a {
     text-decoration: none;
     color: #fff;
     font-family: fonte-Light;
     background: #19499e url(../images/seta.png) no-repeat 275px center;
-    padding: 14px 65px 15px 18px;
+    padding: 14px 53px 15px 16px;
     border-radius: 30px;
     text-transform: uppercase;
 }

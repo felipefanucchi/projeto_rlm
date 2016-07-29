@@ -12,7 +12,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script>
         $(document).ready(function (e) {
-            $("nav a").click(function (event) {
+            $("nav ul li a").click(function (event) {
                 event.preventDefault();
                 var destino = 0;
                 if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
@@ -105,7 +105,7 @@
                         </figure>
                         <div class="detalhes"><h2>a rlm</h2></div>
                     </div>
-                    <div class="col-1-4 quemsomos">
+                    <div class="col-1-4 mobile-col-1-2 quemsomos">
                         <figure>
                             <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/missão-2.png" alt=""></a>
                         </figure>
@@ -141,7 +141,37 @@
                     </div>
                 </div>
             </section>
-            <section id="eventos"></section>
+            <section id="eventos">
+                 <div class="grid">
+                    <div class="col-1-1">
+                        <h1>Eventos</h1>
+                    </div>
+                    <div class="col-1-4 mobile-col-1-2 eventos" >
+                        <figure>
+                           <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/brasilplast.fw_-e1454856936641.png" alt=""></a>
+                        </figure>
+                        <div class="detalhes"><h2>BRASILPLAST 2011</h2></div>
+                    </div>
+                    <div class="col-1-4 mobile-col-1-2 eventos">
+                        <figure>
+                            <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/brasilpack.fw_-e1454856912492.png" alt=""></a>
+                        </figure>
+                        <div class="detalhes"><h2>BRASILPAck 2012</h2></div>
+                    </div>
+                    <div class="col-1-4 mobile-col-1-2 eventos">
+                        <figure>
+                            <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/feiplastic.fw_-e1454856921731.png" alt=""></a>
+                        </figure>
+                        <div class="detalhes"><h2>feiplastic 2013</h2></div>
+                    </div>
+                    <div class="col-1-4 mobile-col-1-2 eventos">
+                        <figure>
+                            <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/feiplastic.fw_-e1454856921731.png" alt=""></a>
+                        </figure>
+                        <div class="detalhes"><a href=""><h2>feiplastic 2015</h2></a></div>
+                    </div>
+                </div>
+            </section>
             <section id="contato">
                 <div class="background-opaco">
                     <div class="grid">

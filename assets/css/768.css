@@ -86,7 +86,7 @@
 }
 
 @media (max-width:520px) {
-    .quemsomos {
+    .quemsomos, .eventos {
         width: 100%;
     }
     .home2 {
@@ -115,8 +115,8 @@
 }
 
 @media (max-width:767px) {
-    .quemsomos {
-        margin: 50px 0 50px 0;
+    .quemsomos, .eventos {
+        margin: 50px 0 25px 0;
     }
     .home2 {
         margin-top: 15px;
@@ -131,5 +131,11 @@
         height: 0px;
         margin-bottom:50px;
   
+    }
+}
+@media (max-width:420px){
+    #produtos a {
+        font-size: 12px;
+padding: 10px 20px;
     }
 }
