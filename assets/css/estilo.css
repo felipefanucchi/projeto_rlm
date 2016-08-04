@@ -81,6 +81,7 @@ nav.topnav ul li a:hover {
 
 nav.topnav ul li:active {
     color: #82D8F5;
+    
 }
 
 nav.topnav ul li.icon {
@@ -145,17 +146,17 @@ nav.topnav.responsive ul li a {
 }
 
 
+
 /*background opaco*/
 
 .background-opaco {
     background: rgba(0, 0, 0, 0.5);
-    /* height: 670px; */
 }
 
 
 /*secao home*/
 
-#home h1 {
+.titulo-home h1 {
     font-family: fonte-bold;
     text-align: center;
     color: #fff;
@@ -165,10 +166,10 @@ nav.topnav.responsive ul li a {
     font-size: 55px;
     padding-top: 24%;
 }
-
-#home {
-    background: url(../images/img-qm-somos.png) no-repeat 0 -50px /cover;
+.titulo-home h1 span{
+    display: inline-block;
 }
+
 
 .bota-home {
     display: flex;
@@ -194,7 +195,6 @@ nav.topnav.responsive ul li a {
     font-family: fonte-Light;
     font-size: 13px;
     padding: 15px 32px;
-    border: 1px solid #285e8e;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -218,13 +218,13 @@ footer {
 
 .local,
 .mapa,
-.redes-sociais {
-    margin: 35px 0;
+.links-uteis {
+    margin: 35px 0 10px 0;
     text-align: center;
 }
 
 footer .local h1,
-.redes-sociais h1 {
+.links-uteis h1 {
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
@@ -247,8 +247,8 @@ footer .local p {
 .yt-icon,
 .inst-icon,
 .face-icon {
-    width: 45px;
-    height: 45px;
+    width: 26px;
+height: 26px;
     padding-right: 11px;
 }
 
@@ -257,22 +257,22 @@ footer .local p {
     background: #3ab0e2;
     color: #e5e5e5;
 }
-
+.copyright p{
+    display: inline;
+}
+.copyright a{
+    text-decoration: none;
+    color: #e5e5e5;
+}
 footer figure {
     width: 180px;
-    text-align: center;
-    margin: 0 auto
+    float: right;
 }
 
 footer img:hover {
     opacity: .5;
 }
 
-.img-autor {
-    margin-top: 20px;
-}
-
-.img-autor,
 .mapa,
 .copyright {
     display: flex;
@@ -281,7 +281,22 @@ footer img:hover {
     margin-right: auto;
     align-items: center;
 }
+.links-uteis ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.links-uteis ul li a{
+    text-decoration: none;
+    color: #fff;
+    vertical-align: super;
+}
 
+.links-uteis ul li{
+    padding-bottom: 8px;
+    text-align: left;
+    list-style: url(../images/seta-rodape.png);
+}
 
 /*sections*/
 
@@ -369,7 +384,8 @@ textarea {
 }
 
 #contato h1,
-#quem-somos h1 , #eventos h1{
+#quem-somos h1,
+#eventos h1 {
     font-family: fonte-bold;
     text-align: center;
     color: #fff;
@@ -463,7 +479,7 @@ textarea {
     opacity: 0;
 }
 
-.home2:hover .text-detalhes {
+.home2 .text-detalhes:hover {
     top: 0;
     background: #333;
     color: white;
@@ -475,33 +491,39 @@ textarea {
 
 /*a rlm qm somos*/
 
-#quem-somos, #eventos {
+#quem-somos,
+#eventos {
     background: #19499e;
     color: #fff;
     font-family: fonte-regular;
 }
 
-.quemsomos, .eventos{
+.quemsomos,
+.eventos {
     text-align: center;
     margin: 85px 0 100px 0;
 }
 
-.quemsomos .detalhes a, #eventos a {
+.quemsomos .detalhes a,
+#eventos a {
     color: #fff
 }
 
-.quemsomos img, .eventos img {
+.quemsomos img,
+.eventos img {
     border: 10px solid rgb(255, 255, 255);
     border-radius: 50%;
     padding: 10px;
 }
 
-.quemsomos img:hover, #eventos img:hover {
+.quemsomos img:hover,
+#eventos img:hover {
     border: 10px solid #3ab0e2;
     transition: linear .25s;
 }
 
-.quemsomos h2, #eventos h2 {
+.quemsomos h2,
+#eventos h2 {
     text-transform: uppercase;
     font-size: 15px;
     position: relative;
@@ -509,12 +531,14 @@ textarea {
     font-family: fonte-regular;
 }
 
-.quemsomos .detalhes, .eventos .detalhes {
+.quemsomos .detalhes,
+.eventos .detalhes {
     position: relative;
     display: inline-block;
 }
 
-.quemsomos .detalhes:before, .eventos .detalhes:before {
+.quemsomos .detalhes:before,
+.eventos .detalhes:before {
     position: absolute;
     margin: auto;
     z-index: 1;
@@ -529,7 +553,10 @@ textarea {
 #produtos img {
     width: 100%;
 }
+
+
 /*produtos*/
+
 #produtos a {
     text-decoration: none;
     color: #fff;
@@ -551,4 +578,58 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+#produtos {
+    background: #fff;
+}
+
+
+/*animacao texto home*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+.titulo-home h1 span:nth-child(1) {
+    opacity: 0;
+    animation: fadeIn 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.titulo-home h1 span:nth-child(2) {
+    opacity: 0;
+    animation: fadeIn 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+
+.bota-home a{
+      opacity: 0;
+    animation: fadeIn 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+/*PARALLAX HOME*/
+
+.mouse-bg {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1400px;
+    position: absolute;
+}
+#home {
+    background: url(../images/img-qm-somos.png) no-repeat 70px -31px /cover;
+    height: 750px;
+    position: fixed;
+}
+.parallax-move {
+    position: relative;
 }

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="stylesheet" href="assets/css/768.css">
     <link rel="stylesheet" href="assets/css/font-face.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/mouse.parallax.js"></script>
     <script>
         $(document).ready(function (e) {
             $("nav ul li a").click(function (event) {
@@ -26,6 +27,13 @@
                 }, 800, 'swing');
             });
         });
+    </script>
+    <!-- mouse parallax -->
+    <script>
+        $(document).ready(function() {
+				$('#home').mouseParallax({ moveFactor: 5 });
+				$('body').height(3000);
+			});
     </script>
 </head>
 
@@ -49,73 +57,69 @@
     </header>
     <div class="wrap">
         <div class="main">
-            <section id="home">
-                <div class="background-opaco">
+            <section class="background-opaco">
+                    <div class="parallax-move"> <div id="home" class="mouse-bg"></div></div> 
                     <div class="grid">
-                        <div class="col-1-1">
-                            <h1>máquinas de corte e solda para embalagens plásticas Flexíveis</h1> </div>
-                        <div class="col-1-1">
+                        <div class="col-1-1 titulo-home">
+                            <h1><span>máquinas de corte e solda para</span><span>embalagens plásticas Flexíveis</span></h1> </div>
+                        <div class="col-1-1 botao-home">
                             <div class="bota-home"><a href="#" class="botao-padrao">Galeria de videos</a></div>
                         </div>
                     </div>
-                </div>
             </section>
-            <section id="home2">
+            <section id="home2" >
                 <div class="grid">
-                    <div class="col-1-1 text-home2">
+                    <div class="col-1-1 text-home2" >
                         <h1>Rlm Máquinas</h1>
-                        <h2>Aliando eficiência e qualidade à segurança e praticidade</h2>
-                    </div>
-                    
-                    <div class="col-1-4 mobile-col-1-2 home2" >
-                        <figure>
-                            <img src="assets/images/NR-12.png" alt="">
-                        </figure>
-                        <div class="detalhes"><h2>NR-12</h2></div>
+                        <h2>Aliando eficiência e qualidade à segurança e praticidade</h2> </div>
+                    <div class="col-1-4 mobile-col-1-2 home2">
+                        <figure> <img src="assets/images/NR-12.png" alt=""> </figure>
+                        <div class="detalhes">
+                            <h2>NR-12</h2></div>
                     </div>
                     <div class="col-1-4 home2" data-sr-complete="true">
-                        <figure>
-                            <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xbndes.fw_.png.pagespeed.ic.hOL3a7mBp1.png" alt="">
-                        </figure>
-                        <div class="detalhes"><h2>Cartão bndes</h2></div>
+                        <figure> <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xbndes.fw_.png.pagespeed.ic.hOL3a7mBp1.png" alt=""> </figure>
+                        <div class="detalhes">
+                            <h2>Cartão bndes</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 home2">
-                        <figure>
-                            <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xproger-.png.pagespeed.ic.T9W0UhoVHy.png" alt="">
-                        </figure>
-                        <div class="detalhes"><h2>proger</h2></div>
+                        <figure> <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xproger-.png.pagespeed.ic.T9W0UhoVHy.png" alt=""> </figure>
+                        <div class="detalhes">
+                            <h2>proger</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 home2">
-                        <figure>
-                            <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xparceiros.png.pagespeed.ic.tsY_S4wLx3.png" alt="">
-                        </figure>
+                        <figure> <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/01/xparceiros.png.pagespeed.ic.tsY_S4wLx3.png" alt=""> </figure>
                         <div class="detalhes"><a href=""><h2>parceiros</h2></a></div>
-                        <div class="text-detalhes"><p>Parceria com fornecedores líderes no segmento.</p></div>
+                        <div class="text-detalhes">
+                            <p>Parceria com fornecedores líderes no segmento.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="quem-somos">
                 <div class="grid">
                     <div class="col-1-1">
-                        <h1>A rlm</h1>
-                    </div>
-                    <div class="col-1-4 mobile-col-1-2 quemsomos" >
+                        <h1>A rlm</h1> </div>
+                    <div class="col-1-4 mobile-col-1-2 quemsomos">
                         <figure>
-                           <a href="#"><img src="assets/images/empresa.png" alt=""></a>
+                            <a href="#"><img src="assets/images/empresa.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>a rlm</h2></div>
+                        <div class="detalhes">
+                            <h2>a rlm</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 quemsomos">
                         <figure>
                             <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/missão-2.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>Missão</h2></div>
+                        <div class="detalhes">
+                            <h2>Missão</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 quemsomos">
                         <figure>
                             <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/xvalores-3-e1456413887567.png.pagespeed.ic.vWVmwlvFmv.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>valores</h2></div>
+                        <div class="detalhes">
+                            <h2>valores</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 quemsomos">
                         <figure>
@@ -127,42 +131,40 @@
             </section>
             <section id="produtos">
                 <div class="grid">
-                   <div class="col-1-1">
+                    <div class="col-1-1">
                         <h1>produtos </h1>
-                        <h2>Atualmente contamos com quatro modelos distintos, para atender adequadamente à necessidade específica de nossos clientes. </h2>
-                   </div>
+                        <h2>Atualmente contamos com quatro modelos distintos, para atender adequadamente à necessidade específica de nossos clientes. </h2> </div>
                     <div class="col-1-2">
-                        <figure>
-                            <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/xrlm-.jpg.pagespeed.ic.zuutHDgavP.jpg" alt="">
-                        </figure>
+                        <figure> <img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/xrlm-.jpg.pagespeed.ic.zuutHDgavP.jpg" alt=""> </figure>
                     </div>
                     <div class="col-1-2">
-                        <h3><a href="#">Veja nossos produtos</a></h3>
-                    </div>
+                        <h3><a href="#">Veja nossos produtos</a></h3> </div>
                 </div>
             </section>
             <section id="eventos">
-                 <div class="grid">
+                <div class="grid">
                     <div class="col-1-1">
-                        <h1>Eventos</h1>
-                    </div>
-                    <div class="col-1-4 mobile-col-1-2 eventos" >
+                        <h1>Eventos</h1> </div>
+                    <div class="col-1-4 mobile-col-1-2 eventos">
                         <figure>
-                           <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/brasilplast.fw_-e1454856936641.png" alt=""></a>
+                            <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/brasilplast.fw_-e1454856936641.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>BRASILPLAST 2011</h2></div>
+                        <div class="detalhes">
+                            <h2>BRASILPLAST 2011</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 eventos">
                         <figure>
                             <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/brasilpack.fw_-e1454856912492.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>BRASILPAck 2012</h2></div>
+                        <div class="detalhes">
+                            <h2>BRASILPAck 2012</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 eventos">
                         <figure>
                             <a href="#"><img src="http://www.rlmmaquinas.ind.br/wp-content/uploads/2016/02/feiplastic.fw_-e1454856921731.png" alt=""></a>
                         </figure>
-                        <div class="detalhes"><h2>feiplastic 2013</h2></div>
+                        <div class="detalhes">
+                            <h2>feiplastic 2013</h2></div>
                     </div>
                     <div class="col-1-4 mobile-col-1-2 eventos">
                         <figure>
@@ -197,7 +199,7 @@
                 </form>
             </section>
         </div>
-        </div>
+    </div>
     <footer>
         <div class="grid">
             <div class="col-1-3 mobile-col-1-2">
@@ -216,22 +218,30 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.131143404152!2d-46.51118288501951!3d-23.7070103846108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6a0e5541107d%3A0x784860f74e57402!2sR.+dos+Ciprestes%2C+469+-+Jardim+Irene%2C+Santo+Andr%C3%A9+-+SP%2C+09170-530!5e0!3m2!1spt-BR!2sbr!4v1469281909252" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-1-3 mobile-col-1-2 redes-sociais">
-                <h1>Redes Sociais</h1>
+            <div class="col-1-3 mobile-col-1-2 links-uteis">
+                <h1>Links Úteis</h1>
+                
+                <div>
+                    <ul>
+                        <li><a href="a-rlm.html">a rlm</a></li>
+                        <li><a href="att-diferenciado.html">atendimento diferenciado</a></li>
+                        <li><a href="galeria-de-produtos.html">galeria de produtos</a></li>
+                        <li><a href="feitplastic-2015.html">feiplastic 2015</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="grid">
+                <p>© Copyright 2016 - Todos os direitos reservados à RLM <!-- <br>Desenvolvido por <a href="http://webmarfan.com.br/" target="_blank">WebMARFAN</a> --></p>
                 <figure>
                     <a href="https://www.facebook.com/RLM-M%C3%A1quinas-338347323022730/?ref=aymt_homepage_panel" target="_blank"><img class="face-icon" src="assets/images/face-icon.png" alt="facebook icone"></a>
                     <a href="https://www.youtube.com/user/RLMmaquinas" target="_blank"><img class="yt-icon" src="assets/images/yt-icon.png" alt="youtube icone"></a>
                     <a href="https://www.instagram.com/rlmmaquinas/" target="_blank"><img class="inst-icon" src="assets/images/inst-icon.png" alt="instagram icone"></a>
                 </figure>
-                <div class="img-autor">
-                    <a href="http://webmarfan.com.br/" target="_blank"><img src="http://webmarfan.com.br/imagens/copyright/copyright-webmarfan-2.png" alt="logotipo autor"></div>
-                </a>
             </div>
-        </div>
-        <div class="copyright">
-            <div class="grid">
-                <p>© Copyright 2016 - Todos os direitos reservados à RLM</p>
-            </div>
+            
         </div>
     </footer>
     <script>
@@ -245,42 +255,11 @@
             }
         }
     </script>
-    <!--MASCARA TELEFONE-->
-    <script type="text/javascript">
-        /* Máscaras ER */
-        function mascara(o, f) {
-            v_obj = o
-            v_fun = f
-            setTimeout("execmascara()", 1)
-        }
-
-        function execmascara() {
-            v_obj.value = v_fun(v_obj.value)
-        }
-
-        function mtel(v) {
-            v = v.replace(/D/g, ""); //Remove tudo o que não é dígito
-            v = v.replace(/^(d{2})(d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-            v = v.replace(/(d)(d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
-            return v;
-        }
-
-        function id(el) {
-            return document.getElementById(el);
-        }
-        window.onload = function () {
-            id('telefone').onkeypress = function () {
-                mascara(this, mtel);
-            }
-        }
-    </script>
-    
-    <script src="js/jquery-2.1.4.js"></script>
+  
     <script src="js/velocity.min.js"></script>
     <script src="js/velocity.ui.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/modernizr.js"></script>
-    <script src="assets/js/jquery.onepage-scroll.js"></script>
 </body>
 
 </html>

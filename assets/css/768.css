@@ -1,5 +1,5 @@
 @media (max-width:768px) {
-    #quem-somos h1 {
+    #quem-somos h1, .titulo-home h1 {
         font-size: 35px;
     }
     .wrap {
@@ -91,12 +91,6 @@
     }
     .home2 {
         width: 100%
-    }
-}
-
-@media (min-width:680px) {
-    footer .redes-sociais h1 {
-        display: none;
     }
 }
 
