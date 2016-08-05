@@ -290,8 +290,13 @@ footer img:hover {
     text-decoration: none;
     color: #fff;
     vertical-align: super;
+    text-transform: uppercase;
+    font-size: 15px 
 }
 
+.links-uteis ul li a:hover{
+    opacity: .5
+}
 .links-uteis ul li{
     padding-bottom: 8px;
     text-align: left;
