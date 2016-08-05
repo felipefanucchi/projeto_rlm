@@ -1,3 +1,1 @@
-#projeto_rlm
-Welcome to my first project in git! <strike> I'm learning.. </strike><br>Wanna help? Feel free<br>
-<i>ty!</i>
+#this one is the last i've did, the footer is new!
